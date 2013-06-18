@@ -16,7 +16,7 @@ object MovingMusic {
       val targetDeviceInfo = MidiSystem.getMidiDeviceInfo()(Console.readInt())
       val targetDevice = MidiSystem.getMidiDevice(targetDeviceInfo)
         
-      // Todo: Create a listener :D
+      // Define a litener and a controller
       val leapListener = new FingerLeapListener(targetDevice)
       val leapController = new Controller()
       
